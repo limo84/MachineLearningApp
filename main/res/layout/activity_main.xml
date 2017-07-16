@@ -6,13 +6,45 @@
     android:layout_height="match_parent"
     tools:context="coffee.einkaufsliste.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="25dp"
+        android:onClick="onClickBtn"
+        android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Item"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="325dp"
+        android:layout_height="392dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="31dp" />
 
 </android.support.constraint.ConstraintLayout>
